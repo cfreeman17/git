@@ -11,41 +11,25 @@ int main()
 	return 0;
 }
 
-////return a random word
-//string randomWord()
-//{
-//	const int Num_Words = 5;
-//	const string Words[NUM_WORDS] =
-//	{
-//		"wall",
-//		"glasses",
-//		"labored",
-//		"persistent",
-//		"jumble"
-//
-//	};
-//	
-//	int choice = (rand() % NUM_WORDS);
-//	string word = WORDS[choice];
-//
-//	return word;
-//}
-////return a jumbled version of aWord
-//string mixUp(const string&aWord)
-//{
-//	string aJumble = aWord;
-//	int length = static_cast<int>(aJumble.size());
-//
-//	for (int i = 0; i < length; ++1)
-//	{
-//		int randomIndex = (rand() % length);
-//		char temp = aJumble[i];
-//		aJumble[i] = aJumble[randomIndex];
-//		aJumble[randomIndex] = temp;
-//		return aJumble;
-//	}
-//
-//}
+//return a random word
+string randomWord()
+{
+	const int NUM_WORDS = 5;
+	const string WORDS[NUM_WORDS] =
+	{
+		"wall",
+		"glasses",
+		"labored",
+		"persistent",
+		"jumble"
+
+	};
+	
+	int choice = (rand() % NUM_WORDS);
+	string word = WORDS[choice];
+
+	return word;
+}
 
 
 //welcome player and explain game
